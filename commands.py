@@ -12,7 +12,7 @@ async def sendEmbed(ds, title, description, footer, channel):
 
 #Commands
 async def status(ds, client, message):
-   msg = path.exists("../../ServerStuff/Server/HMR Server/world/session.lock") and ":HMRCheckMark: Online" or ":HMRXMark: Offline"
+   msg = path.exists("../../ServerStuff/Server/HMR Server/world/session.lock") and ":HMRCheckMark:795760765872766996 Online" or ":HMRXMark:805691417422462988 Offline"
    await sendEmbed(ds, "Server Status", msg, "Type -smphelp for a full list of commands", message.channel)
 
 async def ip(ds, client, message):
