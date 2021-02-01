@@ -54,4 +54,4 @@ async def on_raw_reaction_remove(payload):
             guild = await client.fetch_guild(payload.guild_id)
             member = discord.utils.get(guild.members, id = payload.user_id)
             await member.remove_roles(getRole(client.get_guild(payload.guild_id).roles, "Verified SMP Member"))
-client.run("ODA1NDYwNjcyNTMxMDA1NDkx.YBbNtQ.Xqy9aoNLAQDcWBVPg4tjDn_64FY")
+client.run("ODA1NDYwNjcyNTMxMDA1NDkx.YBbNtQ.j9BQJuyrk4UFTSmRmOHb7NR_ySw") 

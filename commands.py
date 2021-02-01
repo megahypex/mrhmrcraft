@@ -1,3 +1,4 @@
+from os import path
 
 #Utility
 async def sendEmbed(ds, title, description, footer, channel):
@@ -11,7 +12,8 @@ async def sendEmbed(ds, title, description, footer, channel):
 
 #Commands
 async def status(ds, client, message):
-   await sendEmbed(ds, "Server Status", ":warning: Not Tracked", "Type -smphelp for a full list of commands", message.channel)
+   msg = path.exists("../../ServerStuff/Server/HMR Server/world/session.lock") and ":HMRCheckMark: Online" or ":HMRXMark: Offline"
+   await sendEmbed(ds, "Server Status", msg, "Type -smphelp for a full list of commands", message.channel)
 
 async def ip(ds, client, message):
     await sendEmbed(ds, "Server IPs", """
